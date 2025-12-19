@@ -1,6 +1,6 @@
 # Claude Code Setup Documentation
 
-A comprehensive guide for setting up Claude Code with MCP (Model Context Protocol) servers, specifically focusing on GitHub integration.
+A comprehensive guide for setting up Claude Code with MCP (Model Context Protocol) servers, GitHub integration, and Happy mobile client.
 
 ## Table of Contents
 
@@ -8,6 +8,7 @@ A comprehensive guide for setting up Claude Code with MCP (Model Context Protoco
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [GitHub MCP Server Setup](#github-mcp-server-setup)
+- [Happy Mobile Client Setup](#happy-mobile-client-setup)
 - [Features](#features)
 - [Usage Examples](#usage-examples)
 - [Troubleshooting](#troubleshooting)
@@ -15,7 +16,9 @@ A comprehensive guide for setting up Claude Code with MCP (Model Context Protoco
 
 ## About
 
-This repository contains documentation and guides for setting up Claude Code with MCP servers. MCP servers extend Claude Code's capabilities by providing integrations with external services like GitHub, allowing you to interact with repositories, issues, pull requests, and more directly from the command line.
+This repository contains documentation and guides for setting up Claude Code with MCP servers and the Happy mobile client. MCP servers extend Claude Code's capabilities by providing integrations with external services like GitHub, allowing you to interact with repositories, issues, pull requests, and more directly from the command line.
+
+The Happy mobile client enables you to control Claude Code from your smartphone with end-to-end encryption, voice coding, and seamless workflow continuity between desktop and mobile.
 
 ## Prerequisites
 
@@ -89,6 +92,49 @@ View detailed configuration:
 ```bash
 claude mcp get github
 ```
+
+## Happy Mobile Client Setup
+
+Happy is a free, open-source mobile client that lets you control Claude Code from your smartphone with end-to-end encryption, voice coding, and push notifications.
+
+### Quick Start
+
+1. **Install Happy CLI**:
+   ```bash
+   npm install -g happy-coder
+   ```
+
+2. **Download Happy App**:
+   - [iOS App Store](https://apps.apple.com/us/app/happy-claude-code-client/id6748571505)
+   - Android Google Play Store
+   - Web: [happy.engineering](https://happy.engineering)
+
+3. **Pair Your Devices**:
+   ```bash
+   happy --auth
+   ```
+   Then scan the QR code with your mobile app.
+
+4. **Start Using Happy**:
+   ```bash
+   happy
+   ```
+   Your Claude Code session is now synced to your phone!
+
+### Complete Setup Guide
+
+For detailed installation, configuration, and usage instructions, see:
+
+**📱 [HAPPY_SETUP.md - Complete Happy App Guide](./HAPPY_SETUP.md)**
+
+This comprehensive guide includes:
+- Detailed installation steps
+- Connecting to your Claude account
+- Running commands from mobile
+- Voice coding setup
+- Push notification configuration
+- Troubleshooting common issues
+- Advanced configuration options
 
 ## Features
 
@@ -194,9 +240,19 @@ claude mcp update github -e GITHUB_PERSONAL_ACCESS_TOKEN=new_token_here
 
 ## Resources
 
+### MCP Servers
 - [Model Context Protocol Documentation](https://modelcontextprotocol.io/)
 - [GitHub MCP Server on npm](https://www.npmjs.com/package/@modelcontextprotocol/server-github)
 - [Model Context Protocol Servers Repository](https://github.com/modelcontextprotocol/servers)
+
+### Happy Mobile Client
+- [Happy Engineering Homepage](https://happy.engineering/)
+- [Happy Quick Start Guide](https://happy.engineering/docs/quick-start/)
+- [Happy Features Documentation](https://happy.engineering/docs/features/)
+- [Happy GitHub Repository](https://github.com/slopus/happy)
+- [Happy CLI GitHub Repository](https://github.com/slopus/happy-cli)
+
+### Claude Code
 - [Claude Code Documentation](https://claude.ai/code)
 
 ## Contributing
